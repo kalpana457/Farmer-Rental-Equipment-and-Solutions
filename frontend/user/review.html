@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Write Review</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f2f2f2;
+}
+
+.container{
+width:400px;
+margin:auto;
+margin-top:80px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+h2{
+text-align:center;
+}
+
+input,textarea,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background:green;
+color:white;
+border:none;
+font-size:16px;
+}
+
+button:hover{
+background:darkgreen;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Write Equipment Review</h2>
+
+<form action="review.jsp" method="post">
+
+Equipment ID
+<input type="text" name="equipment_id" required>
+
+User ID
+<input type="text" name="user_id" required>
+
+Rating
+<select name="rating">
+
+<option value="1">1 - Poor</option>
+<option value="2">2 - Average</option>
+<option value="3">3 - Good</option>
+<option value="4">4 - Very Good</option>
+<option value="5">5 - Excellent</option>
+
+</select>
+
+Comment
+<textarea name="comment" placeholder="Write your review"></textarea>
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

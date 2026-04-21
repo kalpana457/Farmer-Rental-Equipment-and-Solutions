@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us - Farmer Rental</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 80px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+}
+h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #1b5e20;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    <form action="contact.jsp" method="post">
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Subject</label>
+        <input type="text" name="subject" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>

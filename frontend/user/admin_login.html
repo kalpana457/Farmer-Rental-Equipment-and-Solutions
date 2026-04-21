@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login - Farmer Rental</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+.container{
+    width:350px;
+    margin:auto;
+    margin-top:100px;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+}
+h2{
+    text-align:center;
+    color:#2e7d32;
+}
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button{
+    width:100%;
+    padding:10px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    font-size:16px;
+    border-radius:5px;
+}
+button:hover{
+    background:#1b5e20;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Admin Login</h2>
+<form action="admin_login.jsp" method="post">
+<label>Username</label>
+<input type="text" name="username" required>
+<label>Password</label>
+<input type="password" name="password" required>
+<button type="submit">Login</button>
+</form>
+</div>
+</body>
+</html>

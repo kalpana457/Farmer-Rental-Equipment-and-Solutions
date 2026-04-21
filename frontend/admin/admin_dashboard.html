@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard - Farmer Rental</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f2f6f9;
+}
+
+/* Header */
+
+header{
+background:linear-gradient(90deg,#1b5e20,#4caf50);
+color:white;
+text-align:center;
+padding:25px;
+font-size:28px;
+font-weight:bold;
+}
+
+/* Navigation */
+
+nav{
+background:#333;
+padding:14px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:18px;
+font-size:16px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+/* Dashboard Layout */
+
+.dashboard{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+/* Cards */
+
+.card{
+background:white;
+width:240px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Icon */
+
+.icon{
+font-size:42px;
+margin-bottom:10px;
+}
+
+/* Title */
+
+.card h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+/* Button */
+
+.card a{
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+background:#2e7d32;
+color:white;
+padding:8px 18px;
+border-radius:5px;
+font-size:14px;
+}
+
+.card a:hover{
+background:#1b5e20;
+}
+
+/* Footer */
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:80px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+ Admin Dashboard - Farmer Rental Equipment and Solutions
+</header>
+
+<nav>
+<a href="../user/index.html">Home</a>
+<a href="admin_logout.jsp">Logout</a>
+</nav>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>Manage Users</h3>
+<p>View and manage registered farmers</p>
+<a href="view_users.jsp">Open</a>
+</div>
+
+<div class="card">
+<h3>Manage Equipment</h3>
+<p>Add, update or remove equipment</p>
+<a href="admin_view_equipment.jsp">Open</a>
+</div>
+
+<div class="card">
+<h3>Manage Bookings</h3>
+<p>View and update rental bookings</p>
+<a href="admin_manage_booking.jsp">Open</a>
+</div>
+
+<div class="card">
+<h3>Manage Payments</h3>
+<p>Verify payment transactions</p>
+<a href="admin_manage_payments.jsp">Open</a>
+</div>
+
+
+
+<div class="card">
+<h3>Manage Reviews</h3>
+<p>View or remove farmer reviews</p>
+<a href="admin_manage_reviews.jsp">Open</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Farmer Rental Equipment System
+</footer>
+
+</body>
+</html>
